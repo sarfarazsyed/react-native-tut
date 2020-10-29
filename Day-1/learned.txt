@@ -1,0 +1,52 @@
+React Native using expo - cli 
+
+What is expo?
+Expo is a framework and a platform for universal React applications. 
+It is a set of tools and services built around React Native and native platforms that help you 
+    develop, 
+    build, 
+    deploy, 
+    and quickly iterate on iOS, Android, and web apps 
+from the same JavaScript/TypeScript codebase.
+
+What is expo-cli?
+Expo CLI is a command line app that is the main interface between a developer and Expo tools.
+
+Installation : 
+npm install -g expo-cli
+
+Checking CLI Version :
+expo --version
+
+expo command syntax :
+expo [command] [options]
+
+expo commands :
+
+1. Initialize project : 
+        Command : expo init/i [--template/-t NAME, --yarn, --name NAME]
+        
+        Options:
+            *These options are optional
+            
+            a. --template / -t  : Specify which template to use. 
+                                    Options are [blank, tabs or bare-minimum] or the package name on npm 
+                                    (e.g. "expo init -t expo-template-bare-typescript")
+            
+            b. --yarn           : Use Yarn to install dependencies.
+            
+            c. --nmae           : The name of your app visible on the home screen.
+
+2. Start Server : 
+        Command : expo start/r [--web-only, --web/-w, --ios/-i, --android/-a]
+        
+        Options:
+            *These options are optional
+            
+            --android/ -a :	    Opens your app in the Expo client on a connected Android device.
+            --ios/ -i     :     Opens your app in the Expo client in a currently running iOS simulator on your computer.
+            --web/ -w     :     Opens your app in a web browser.
+            --web-only    :     Only start the webpack server.
+
+for commands, check - https://docs.expo.io/workflow/expo-cli/#checking-cli-version
+
